@@ -42,8 +42,8 @@ jobs:
         env:
           JF_URL: https://${{ vars.JF_URL }}/
         with:
-          oidc-provider-name: rodolphef-github
-          oidc-audience: rodolphef-audience
+          oidc-provider-name: rodolphef-jvmtasks
+          oidc-audience: rodolphef-jvmtasks
           
       - name: Configure Build
         run: |
