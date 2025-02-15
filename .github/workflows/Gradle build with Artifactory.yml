@@ -51,9 +51,9 @@ jobs:
       
       - name: JFrog Curation Audit
         run: |
-          jf mvn-config --repo-resolve-releases mikeho-jvm-tasks-gradle-remote --repo-resolve-snapshots soleng.dev.gradle.virtual --repo-deploy-releases soleng.dev.gradle.virtual --repo-deploy-snapshots soleng.dev.gradle.virtual
-          echo "jvmtasksArtifactName=$(mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout)" >> $GITHUB_ENV
-          echo "jvmtasksVersion=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)" >> $GITHUB_ENV
+          # jf mvn-config --repo-resolve-releases mikeho-jvm-tasks-gradle-remote --repo-resolve-snapshots soleng.dev.gradle.virtual --repo-deploy-releases soleng.dev.gradle.virtual --repo-deploy-snapshots soleng.dev.gradle.virtual
+          # echo "jvmtasksArtifactName=$(mvn help:evaluate -Dexpression=project.artifactId -q -DforceStdout)" >> $GITHUB_ENV
+          # echo "jvmtasksVersion=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)" >> $GITHUB_ENV
           jf curation-audit
       
       - name: Audit Source Code
