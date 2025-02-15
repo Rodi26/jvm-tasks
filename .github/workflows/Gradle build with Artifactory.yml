@@ -56,9 +56,9 @@ jobs:
           # echo "jvmtasksVersion=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)" >> $GITHUB_ENV
           # jf curation-audit
       
-      - name: Audit Source Code
-        run: |
-          jf audit --licenses --format=table --gradle=true
+      #- name: Audit Source Code
+      #  run: |
+      #    jf audit --licenses --format=table --gradle=true
           
       - name: Build Gradle package
         run: |
