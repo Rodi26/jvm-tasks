@@ -32,7 +32,7 @@ dependencies {
     api("com.github.stephenc.jcip:jcip-annotations:1.0-1")
     implementation("org.apache.logging.log4j:log4j-api:$log4jVersion")
     testImplementation("org.apache.logging.log4j:log4j-core:$log4jVersion")
-    testImplementation("junit:junit:4.12")
+    testImplementation("junit:junit:4.13.1")
     testImplementation("org.assertj:assertj-core:3.12.2")
 }
 
