@@ -1,6 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-val kotlinVersion = "1.2.71"
+val kotlinVersion = "1.6.21"
 val log4jVersion = "[2.6, 2.999.999)"
 
 plugins {
